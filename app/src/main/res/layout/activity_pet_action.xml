@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetAction">
+
+    <TextView
+        android:id="@+id/hungerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="301dp"
+        android:layout_marginBottom="38dp"
+        android:text="Hunger"
+        app:layout_constraintBottom_toTopOf="@+id/cleanlinessTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cleanlinessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="301dp"
+        android:layout_marginBottom="49dp"
+        android:text="Clean"
+        app:layout_constraintBottom_toTopOf="@+id/happinessTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/happinessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="301dp"
+        android:layout_marginBottom="100dp"
+        android:text="Happy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/feed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="39dp"
+        android:text="Feed"
+        app:layout_constraintBottom_toTopOf="@+id/hungerTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dog_image" />
+
+    <Button
+        android:id="@+id/clean_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="284dp"
+        android:text="Bath"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/feed_button"
+        app:layout_constraintTop_toBottomOf="@+id/dog_image" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="284dp"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clean_button"
+        app:layout_constraintTop_toBottomOf="@+id/dog_image" />
+
+    <ImageView
+        android:id="@+id/dog_image"
+        android:layout_width="250dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="81dp"
+        android:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_99c7527b7b95f888f76fb41db5b88f0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
